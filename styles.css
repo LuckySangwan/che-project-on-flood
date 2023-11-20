@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: inline-block;
+    background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation: color 5s ease-in-out infinite;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+h1{
+    color:maroon;
+    text-align: center;
+    font-family:fantasy;
+    letter-spacing: 10px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(22),
+    cursor .4s step-end infinite alternate;
+    
+}
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+@keyframes typing {
+    from { width: 0 }
+}
+h2{
+    color: navy;
+    font-family:cursive;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+body{
+   background: linear-gradient(
+    to left,lightblue,lightgreen,coral
+   );
+    font-family: serif;
+    
+}
+h3{
+    color: crimson;
+    padding-left: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.flood_image {
+    float: none;
+    width: 500px;
+    height: 200px;
+    padding: 15px;
+    
+}
+table, th, td {
+    border:1px solid black;
+  }
+p{
+    width:80%; 
+    padding-left: 20px; 
+}
+.footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+  }
+  #grid{
+    background-color: rgb(234,182,118);
+    display: grid;
+    grid-gap: 100px;
+    padding: 10px;
+  
+    grid-template-columns: auto auto auto auto auto;
+    
+
+}
+#grid-container{
+    background-color: #F5F5F5;
+   
+    padding: 15px 5px;
+    font-size: 18px;
+}
